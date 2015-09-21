@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/10/nuspec.xsd">
+  <metadata>
+    <id>Microsoft.Net.Compilers.Targets.NetCore</id>
+    <version>0.1.0-dev</version>
+    <authors>Microsoft</authors>
+    <owners>Microsoft</owners>
+    <licenseUrl>http://go.microsoft.com/fwlink/?LinkId=529444</licenseUrl>
+    <projectUrl>http://msdn.com/roslyn</projectUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <developmentDependency>true</developmentDependency>
+    <description>.Net Compilers MSBuild targets package for .NET Core</description>
+    <releaseNotes>Preview of Microsoft .NET Compiler Platform (Roslyn)</releaseNotes>
+    <language>en-US</language>
+    <tags>Roslyn CodeAnalysis Compiler CSharp VB VisualBasic Parser Scanner Lexer Emit CodeGeneration Metadata IL Compilation Scripting Syntax Semantics</tags>
+    <!-- This list of dependencies IS NOT ENTIRELY ACCURATE.  It's been copied from the MSBuild .NET Core package for now-->
+    <dependencies>
+      <dependency id="System.Collections" version="4.0.10" />
+      <dependency id="System.Collections.Concurrent" version="4.0.10" />
+      <dependency id="System.Collections.NonGeneric" version="4.0.0" />
+      <dependency id="System.Console" version="4.0.0" />
+      <dependency id="System.Diagnostics.Debug" version="4.0.10" />
+      <dependency id="System.Diagnostics.Process" version="4.0.0" />
+      <dependency id="System.Diagnostics.TraceSource" version="4.0.0" />
+      <dependency id="System.Globalization" version="4.0.10" />
+      <dependency id="System.IO" version="4.0.10" />
+      <dependency id="System.IO.FileSystem" version="4.0.0" />
+      <dependency id="System.IO.FileSystem.DriveInfo" version="4.0.0" />
+      <dependency id="System.IO.FileSystem.Primitives" version="4.0.0" />
+      <dependency id="System.Linq" version="4.0.0" />
+      <dependency id="System.ObjectModel" version="4.0.10" />
+      <dependency id="System.Reflection" version="4.0.10" />
+      <dependency id="System.Reflection.Metadata" version="1.1.0-alpha-00012" />
+      <dependency id="System.Resources.ResourceManager" version="4.0.0" />
+      <dependency id="System.Runtime" version="4.0.20" />
+      <dependency id="System.Runtime.Extensions" version="4.0.10" />
+      <dependency id="System.Runtime.Handles" version="4.0.0" />
+      <dependency id="System.Runtime.InteropServices" version="4.0.20" />
+      <dependency id="System.Runtime.InteropServices.RuntimeInformation" version="4.0.0" />
+      <dependency id="System.Text.Encoding" version="4.0.10" />
+      <dependency id="System.Text.Encoding.Extensions" version="4.0.10" />
+      <dependency id="System.Text.RegularExpressions" version="4.0.10" />
+      <dependency id="System.Threading" version="4.0.10" />
+      <dependency id="System.Threading.Tasks" version="4.0.10" />
+      <dependency id="System.Threading.Thread" version="4.0.0" />
+      <dependency id="System.Threading.Timer" version="4.0.0" />
+      <dependency id="System.Xml.ReaderWriter" version="4.0.10" />
+      <dependency id="System.Xml.XmlDocument" version="4.0.0" />
+      <dependency id="Microsoft.Win32.Primitives" version="4.0.0" />
+      <dependency id="Microsoft.Win32.Registry" version="4.0.0" />
+    </dependencies>
+  </metadata>
+
+  <files>
+    <!--<file src="build\Microsoft.Net.Compilers.props" target="build\Microsoft.Net.Compilers.props" />-->
+    <file src="Microsoft.Build.Tasks.CodeAnalysis.dll" target="runtimes\any\native" />
+    <!--<file src="tools\System.Collections.Immutable.dll" target="tools\System.Collections.Immutable.dll" />
+        <file src="tools\System.Reflection.Metadata.dll" target="tools\System.Reflection.Metadata.dll" />-->
+    <!--<file src="tools\VBCSCompiler.exe.config" target="tools\VBCSCompiler.exe.config" />-->
+    <!--<file src="ThirdPartyNotices.rtf" target="ThirdPartyNotices.rtf" />-->
+    
+    <file src="Microsoft.CSharp.Core.targets" target="runtimes\any\native" />
+    <file src="Microsoft.VisualBasic.Core.targets" target="runtimes\any\native" />
+  </files>
+</package>
