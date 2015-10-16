@@ -10,6 +10,7 @@ using Microsoft.Build.Tasks.Hosting;
 using Microsoft.Build.Utilities;
 using Microsoft.CodeAnalysis.CommandLine;
 using Microsoft.CodeAnalysis.CSharp;
+using System.Runtime.InteropServices;
 
 namespace Microsoft.CodeAnalysis.BuildTasks
 {
@@ -170,11 +171,8 @@ namespace Microsoft.CodeAnalysis.BuildTasks
                 }
             }
         }
-
-        /// <summary>
-        /// Return the name of the tool to execute.
-        /// </summary>
-        override protected string ToolName
+        
+        protected override string ExecutableName
         {
             get
             {

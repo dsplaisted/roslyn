@@ -576,9 +576,27 @@ namespace Microsoft.CodeAnalysis.BuildTasks
             return commandLineBuilder.ToString();
         }
 
+        override protected string ToolName
+        {
+            get
+            {
+                if (RuntimeInformation.IsOSPlatform(OSPlatform.Windows))
+                {
+                    return "corerun.exe";
+                }
+                else
+                {
+                    return "corerun";
+                }
+            }
+        }
+
+        protected abstract string ExecutableName { get; }
+
         protected override string GenerateCommandLineCommands()
         {
             CommandLineBuilderExtension commandLineBuilder = new CommandLineBuilderExtension();
+            commandLineBuilder.AppendFileNameIfNotNull(ToolLocationHelper.GetPathToBuildToolsFile(ExecutableName, ToolLocationHelper.CurrentToolsVersion));
             AddCommandLineCommands(commandLineBuilder);
             return commandLineBuilder.ToString();
         }
