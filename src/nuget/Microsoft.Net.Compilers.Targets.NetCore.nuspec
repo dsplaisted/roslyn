@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/10/nuspec.xsd">
   <metadata>
     <id>Microsoft.Net.Compilers.Targets.NetCore</id>
-    <version>0.1.0-dev</version>
+    <version>0.1.2-dev</version>
     <authors>Microsoft</authors>
     <owners>Microsoft</owners>
     <licenseUrl>http://go.microsoft.com/fwlink/?LinkId=529444</licenseUrl>
@@ -13,10 +13,6 @@
     <releaseNotes>Preview of Microsoft .NET Compiler Platform (Roslyn)</releaseNotes>
     <language>en-US</language>
     <tags>Roslyn CodeAnalysis Compiler CSharp VB VisualBasic Parser Scanner Lexer Emit CodeGeneration Metadata IL Compilation Scripting Syntax Semantics</tags>
-    <!-- This list of dependencies IS NOT ENTIRELY ACCURATE.  It's been copied from the MSBuild .NET Core package for now-->
-    <dependencies>
-   
-    </dependencies>
   </metadata>
 
   <files>

@@ -11,13 +11,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Project Include="src\Compilers\CSharp\csc\csc.csproj" />
     <Project Include="src\Compilers\Core\MSBuildTask\MSBuildTask.csproj" />
-    <Project Include="src\Compilers\CSharp\Portable\CSharpCodeAnalysis.csproj" />
-    <Project Include="src\Compilers\Core\Portable\CodeAnalysis.csproj" />
-    <Project Include="src\Compilers\VisualBasic\Portable\BasicCodeAnalysis.vbproj" />
-    <Project Include="src\Compilers\VisualBasic\vbc\vbc.csproj" />
-    <Project Include="src\Compilers\Core\VBCSCompiler\VBCSCompiler.csproj" />
   </ItemGroup>
 
 
