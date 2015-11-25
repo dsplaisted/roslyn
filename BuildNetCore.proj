@@ -11,7 +11,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Project Include="src\Compilers\Core\MSBuildTask\MSBuildTask.csproj" />
+    <Project Include="src\Compilers\Core\MSBuildTask\Portable\MSBuildTask.csproj" />
   </ItemGroup>
 
 

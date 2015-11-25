@@ -4,7 +4,7 @@
   <!--<UsingTask TaskName="GetPackageVersion" AssemblyFile="$(ToolsDir)Microsoft.DotNet.Build.Tasks.dll" />-->
 
   <ItemGroup>
-    <PackagesNuSpecFiles Include="$(SourceDir)nuget\*.nuspec" />
+    <PackagesNuSpecFiles Include="$(SourceDir)nuget\Microsoft.Net.Compilers.Targets.NetCore.nuspec" />
   </ItemGroup>
 
   <PropertyGroup>
