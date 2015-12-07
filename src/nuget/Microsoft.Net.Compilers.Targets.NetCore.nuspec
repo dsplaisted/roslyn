@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/10/nuspec.xsd">
   <metadata>
     <id>Microsoft.Net.Compilers.Targets.NetCore</id>
-    <version>0.1.3-dev</version>
+    <version>0.1.4-dev</version>
     <authors>Microsoft</authors>
     <owners>Microsoft</owners>
     <licenseUrl>http://go.microsoft.com/fwlink/?LinkId=529444</licenseUrl>
