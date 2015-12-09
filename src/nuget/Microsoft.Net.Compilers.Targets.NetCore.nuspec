@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/10/nuspec.xsd">
   <metadata>
     <id>Microsoft.Net.Compilers.Targets.NetCore</id>
-    <version>0.1.4-dev</version>
+    <version>0.1.5-dev</version>
     <authors>Microsoft</authors>
     <owners>Microsoft</owners>
     <licenseUrl>http://go.microsoft.com/fwlink/?LinkId=529444</licenseUrl>
@@ -16,9 +16,9 @@
   </metadata>
 
   <files>
-    <file src="Microsoft.Build.Tasks.CodeAnalysis.dll" target="lib\dotnet" />
+    <file src="CodeAnalysisBuildTask\Microsoft.Build.Tasks.CodeAnalysis.dll" target="lib\dotnet" />
     
-    <file src="Microsoft.CSharp.Core.targets" target="runtimes\any\native" />
-    <file src="Microsoft.VisualBasic.Core.targets" target="runtimes\any\native" />
+    <file src="CodeAnalysisBuildTask\Microsoft.CSharp.Core.targets" target="runtimes\any\native" />
+    <file src="CodeAnalysisBuildTask\Microsoft.VisualBasic.Core.targets" target="runtimes\any\native" />
   </files>
 </package>

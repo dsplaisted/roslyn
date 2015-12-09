@@ -3,7 +3,7 @@
   "version": 1,
   "targets": {
     ".NETPlatform,Version=v5.4": {
-      "Microsoft.Build.Framework/0.1.0-preview": {
+      "Microsoft.Build.Framework/0.1.0-preview-00003": {
         "dependencies": {
           "System.Collections": "[4.0.10, )",
           "System.Diagnostics.Debug": "[4.0.10, )",
@@ -692,8 +692,8 @@
     }
   },
   "libraries": {
-    "Microsoft.Build.Framework/0.1.0-preview": {
-      "sha512": "JPc6Uy9mjX9o/j7uiZaluKr4Qxr17vfXHTOPdWbCc1Vd21mTGXFG9Qat96WhbSvudlhtvCEMYpEHbje3jLQU7A==",
+    "Microsoft.Build.Framework/0.1.0-preview-00003": {
+      "sha512": "Dl1aZ7whAZfqp6ka0891y0g70L5Tt7MfUonMKpOfZLrrUz6TT7VYV8nAYklp6a/I8O2JB5ds65kPH5mPjACU7A==",
       "type": "Package",
       "files": [
         "[Content_Types].xml",
@@ -701,7 +701,7 @@
         "lib/dotnet/Microsoft.Build.Framework.dll",
         "lib/net45/_._",
         "Microsoft.Build.Framework.nuspec",
-        "package/services/metadata/core-properties/72f4c969321947548e1d0fc61cbf1caf.psmdcp"
+        "package/services/metadata/core-properties/e322fabd968e4c27b2a83545d50569f3.psmdcp"
       ]
     },
     "Microsoft.Build.Tasks.Core/0.1.0-preview-00005": {

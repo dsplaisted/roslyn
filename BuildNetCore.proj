@@ -29,8 +29,13 @@
     <MSBuild Targets="Clean" Projects="@(Project)" Condition="'$(SerializeProjects)'!='true'" BuildInParallel="true" />
   </Target>
 
+  <Target Name="RestoreAllProjects">
+    <Exec Command="$(NuGetToolPath) restore @(Project)"/>
+  </Target>
+
   <PropertyGroup>
     <TraversalBuildDependsOn>
+      RestoreAllProjects;
       BuildAllProjects;
       $(TraversalBuildDependsOn);
       BuildPackages;
